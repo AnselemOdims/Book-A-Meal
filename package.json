@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js --exec babel-node --presets babel-preset-env",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha --require babel-polyfill --require babel-register ./server/tests/ --timeout 10000 --exit"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.10"
   }

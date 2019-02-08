@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Book a Meal</title>
+</head>
+
+<body>
+<div class="header">
+        <a><i class="fas fa-hamburger"></i></a>
+        <a href="#default" class="logo"><i>Meal-Buka</i></a>
+    <div class="header-right">
+        <a class="nav-li" href="./index.html">Home</a>
+        <a href="#" class=" active nav-li" id="sign">Sign Up</a>
+        <a href="./login.html" class="nav-li" id="log">Login</a>
+    </div>
+</div>
+
+
+    <div id="signUpForm">
+        <div id="signUpBody">
+                <div id="signUpHeader">
+                    <p>
+                    <b>Sign Up</b>
+                    </p>
+                </div>
+      <form action="" id="form">
+        <div id="signUpHeaderDesc">
+          <p>
+            <em>Please input the following details here to sign up to this page</em>
+          </p>
+        </div>
+        <div class="form_main">
+          <div class="form_inputs">
+            <div class="formGroup">
+              <label class="labelId" for="firstname">First Name</label>
+              <input class="formDetails" name="firstname" id="firstname" type="text" onfocus="this.placeholder=''" placeholder= "Enter First Name " autocomplete="off" required/>
+            </div>
+            
+            <div class="formGroup">
+                    <label class="labelId" for="lastname">Last Name</label>
+                    <input class="formDetails" name="lastname" id="lastname" type="text" onfocus="this.placeholder=''" placeholder= "Enter Last Name " autocomplete="off" required/>
+                  </div>
+            <div class="formGroup">
+              <label class="labelId" for="email">Email</label>
+              <input
+                      class="formDetails" id="email"
+                      name="email"
+                      ,
+                      type="text"
+                      ,
+                      placeholder= "Enter Email "
+                      autocomplete="off"
+                      onfocus="this.placeholder=''"
+                      required
+              />
+            </div>
+                      
+            <div class="formGroup">
+                    <label class="labelId" for="phone">Phone No.</label>
+                    <input
+                            class="formDetails" id="phone"
+                            name="phone"
+                            ,
+                            type="phone"
+                            ,
+                            placeholder= "Enter Phone No. "
+                            autocomplete="off"
+                            onfocus="this.placeholder=''"
+                            required
+                    />
+                  </div>
+
+            <div class="formGroup">
+              <label class="labelId" for="password">Password</label>
+              <input
+                      class="formDetails", id="password"
+                      name="password"
+                      ,
+                      type="password"
+                      ,
+                      placeholder= "Enter Password "
+                      autocomplete="off"
+                      onfocus="this.placeholder=''"
+                      required
+              />
+             
+            </div>
+          
+            <div class="formGroup">
+              <label class="labelId" for="confirm-password">Confirm Password</label>
+              <input
+                      class="formDetails" id="password1"
+                      name="confirm-password"
+                      ,
+                      type="password"
+                      ,
+                      placeholder= "Confirm Password"
+                      autocomplete="off"
+                      onfocus="this.placeholder=''"
+                      required
+              />
+            </div>
+            <!-- <input class="pwhide", type="checkbox" onclick="myFunction()"><span>Show Password</span> -->
+          </div>
+          <input type="submit" value= "SIGNUP" class="regButton regButton1" id="regB">
+          <!-- <button class="dem">signin</button> -->
+          </div>
+        </div>
+        <div id="loginLink">
+          <h4>Already have an account? <a href="login.html">Login</a></h4>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p class="credits">Book-A-Meal | Copyright &copy; 2019</p>
+  </footer>
+ 
+    </body>
+  </html>

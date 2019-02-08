@@ -1,0 +1,244 @@
+.cuisine1, .cuisine3 {
+    border: solid 0px rgba(169, 169, 169, 0.39);
+    background: #f1f1f1;
+    width: 48%;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.26);
+    height: 750px
+}
+.cuisine2, .cuisine4 {
+  border: solid 0px rgba(169, 169, 169, 0.39);
+  background: #f1f1f1;
+  width: 48%;
+  border-radius: 3px;
+  display: block;
+  float: right;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.26);
+  height: 750px
+}
+ 
+.cuisine1 h2, .cuisine2 h2, .cuisine3 h2, .cuisine4 h2 {
+   font-size: 24px;
+  margin: 0 0 10px 150px;
+}
+
+@media screen and (max-width: 768px){
+  .cuisine1 h2, .cuisine2 h2, .cuisine3 h2, .cuisine4 h2 {
+       font-size: 16px;
+       margin: 0 0 10px 50px
+  }
+
+.cuisine1, .cuisine2, .cuisine3, .cuisine4 {
+  width: 49%;
+  height: 650px
+}
+}
+@media screen and (max-width: 420px){
+  .row {
+      -webkit-flex-direction: column;
+      flex-direction: column
+  }
+  .cuisine1 h2, cuisine2 h2, .cuisine3 h2, .cuisine4 h2 {
+      font-size: 13px;
+      font-weight: bolder;
+      margin: 0 0 5px 20px
+  }
+  .cuisine1, .cuisine2, .cuisine3, .cuisine4 {
+      height: 1000px
+  }
+
+}
+.foodrt {
+  width: 45%;
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 260px;
+  margin-bottom: 10px;
+  background-color: #cccccc; 
+  /* height: 200px; */
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px
+}
+.foodrt1 {
+  width: 45%;
+  float: left;
+  margin-left: 15px;
+  margin-top: 80px;
+  height: 260px;
+  margin-bottom: 10px;
+  background-color: #cccccc; 
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px
+}
+.foodlt {
+  width: 45%;
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+  height: 260px;
+  margin-bottom: 10px;
+  background-color: #cccccc; 
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px
+}
+.foodlt1 {
+  width: 45%;
+  float: right;
+  margin-right: 15px;
+  margin-top: 80px;
+  height: 260px;
+  margin-bottom: 10px;
+  background-color: #cccccc; 
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px
+}
+.foodrt:hover {
+  cursor: pointer;
+  -webkit-animation: 0.3s jump;
+  animation: 0.3s jump;
+}
+.foodlt:hover {
+  cursor: pointer;
+  -webkit-animation: 0.3s jump;
+  animation: 0.3s jump;
+}
+.foodrt1:hover {
+  cursor: pointer;
+  -webkit-animation: 0.3s jump;
+  animation: 0.3s jump;
+}
+.foodlt1:hover {
+  cursor: pointer;
+  -webkit-animation: 0.3s jump;
+  animation: 0.3s jump;
+}
+
+
+@-webkit-keyframes jump {
+  0% {
+      -webkit-transform: translateY(-0.25em);
+      transform: translateY(-0.25em);
+  }
+  35% {
+      -webkit-transform: translateY(-0.5em);
+      transform: translateY(-0.5em);
+  }
+  60% {
+      -webkit-transform: translateY(-0.25em);
+      transform: translateY(-0.25em);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+      -webkit-transform: translateY(-0.25em);
+      transform: translateY(-0.25em);
+  }
+  35% {
+      -webkit-transform: translateY(-0.5em);
+      transform: translateY(-0.5em);
+  }
+  60% {
+      -webkit-transform: translateY(-0.25em);
+      transform: translateY(-0.25em);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+} 
+
+.foodrt h6 {
+  color: white;
+  background-color: rgba(0, 255, 0, 0.39);
+  margin: 0; 
+}
+.foodlt h6 {
+  color: white;
+  background-color: rgba(0, 255, 0, 0.39);
+  margin: 0;
+}
+.foodrt1 h6 {
+  color: white;
+  background-color: rgba(0, 255, 0, 0.39);
+  margin: 0; 
+}
+.foodlt1 h6 {
+  color: white;
+  background-color: rgba(0, 255, 0, 0.39);
+  margin: 0;
+}
+@media screen and (max-width: 768px){
+  .foodlt {
+      width: 43% 
+  }
+  .foodrt {
+      width: 43%
+  }
+  .foodlt1 {
+    width: 43%;
+    margin-top: 20px
+}
+.foodrt1 {
+    width: 43%;
+    margin-top: 20px
+}
+.foodrt h6 {
+  font-size: 16px
+}
+.foodlt h6 {
+  font-size: 16px
+}
+.foodrt1 h6 {
+font-size: 14px
+}
+.foodlt1 h6 {
+font-size: 14px
+}
+}
+@media screen and (max-width: 420px){
+  .foodlt {
+      width: 84%;
+      height: 100px;
+      margin-right: 10px;
+      margin-top: 110px
+  }
+  .foodrt{
+      width: 84%;
+      height: 100px;
+      margin-left: 10px
+  }
+  .foodlt1 {
+    width: 84%;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 150px
+  }
+  .foodrt1 {
+    width: 84%;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 116px
+  }
+  .foodrt h6 {
+      font-size: 12px
+  }
+  .foodlt h6 {
+      font-size: 12px
+  }
+  .foodrt1 h6 {
+    font-size: 12px
+}
+.foodlt1 h6 {
+    font-size: 12px
+}
+}

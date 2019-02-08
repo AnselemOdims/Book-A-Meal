@@ -1,5 +1,5 @@
 @import url(./index.css);
-@import url(./img.css);
+@import url(./meals.css);
 body{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09)), no-repeat center center;
     margin: auto;

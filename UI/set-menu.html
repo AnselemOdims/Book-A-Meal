@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/set-menu.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <title>Book a Meal</title>
+</head>
+
+<body>
+    <div class="header">
+      <a><i class="fas fa-hamburger"></i></a>
+      <a href="#default" class="logo"><i>Meal-Buka</i></a>
+  <div class="header-right">
+      <!-- <a class="nav-li" href="./index.html">Home</a> -->
+      <a href="#" class="active nav-li" id="sign"> Welcome, Chef Anselem</a>
+      <a href="#"><i class="fas fa-bullhorn"></i></a>
+      <a href="./login.html" class="nav-li" id="log">Logout</a>
+     
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <img src="img/Caterer.png" class="adminpic">
+      <h2>SET MENU</h2>
+      <a href="./admin-manage.html" class="sdmen">Meal Options</a>
+      <a href="./admin-profile.html" class="sdmen">Profile</a>
+      <a href="#" class="sdmen1">Set Menu</a>  
+    </div>
+  </div>
+  <button class="openbtn" onclick="openNav()">☰</button> 
+</div>
+<div class="sidenav">
+    <img src="img/Caterer.png" class="adminpic">
+    <h2>SET MENU</h2>
+    <a href="./admin-manage.html" class="sdmen">Meal Options</a>
+    <a href="./admin-profile.html" class="sdmen">Profile</a>
+    <a href="#" class="sdmen1">Set Menu</a>
+   
+  </div>
+  <div class="set-menu">
+    <div class="date">
+    <h1>Saturday, 7th Feb. 2019</h1>
+    </div>
+    <div class="setbttn">
+    <div class="bttn">
+    <button class="addbtn addbtn1" id="yestMenu">&larr; VIEW YESTERDAY'S MENU <i class="fas fa-shopping-bag"></i></button>
+    </div>      
+    <div class="bttn">
+    <button class="addbtn addbtn1" id="todMenu"><i class="fas fa-shopping-bag"></i> VIEW TODAY'S MENU &rarr;</button>
+    </div>
+    </div>
+  <div class="main">
+      <h2>Set Menu From Available Meal Options</h2>
+      <div class="row">   
+          <div class="cuisine1">
+             <h2>Local Cuisine</h2>
+             <div class="foodrt food" id="foodset1">
+                <h6>Fufu & Egusi Soup</h6>
+              <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+              <p class="price">&#8358;19.99</p>
+              
+              </div>
+       
+             <div class="foodlt food" id="foodset2">
+             <h6>Amala & Ewedu Soup</h6>
+                 <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                 <p class="price">&#8358;19.99</p>
+                 
+                 </div>
+        
+             <div class="foodrt1 food" id="foodset3">
+                      <h6>Poundo & Edikankong</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                         <p class="price">&#8358;19.99</p>
+                        
+                  </div>
+       
+                     <div class="foodlt1 food" id="foodset4">
+                     <h6>Semo & Bitterleaf Soup</h6>
+                         <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                         <p class="price">&#8358;19.99</p>
+                         
+                         </div>    
+                       </div>
+            
+          <div class="cuisine2">
+             <h2>Continental Dishes</h2>
+             <div class="foodrt food" id="foodset5">
+                 <h6>Fufu & Egusi Soup</h6>
+               <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+               <p class="price">&#8358;19.99</p>
+               
+               </div>
+       
+              <div class="foodlt food" id="foodset6">
+              <h6>Amala & Ewedu Soup</h6>
+                  <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                  <p class="price">&#8358;19.99</p>
+                 
+                  </div>
+         
+              <div class="foodrt1 food" id="foodset7">
+                       <h6>Poundo & Edikankong</h6>
+                       <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                          <p class="price">&#8358;19.99</p>
+                   </div>
+       
+                      <div class="foodlt1 food" id="foodset8">
+                      <h6>Semo & Bitterleaf Soup</h6>
+                          <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                          <p class="price">&#8358;19.99</p>
+                          
+                          </div>    
+                        </div>
+          
+          <div class="cuisine3">
+                 <h2>Snacks</h2>
+                 <div class="foodrt food" id="foodset9">
+                     <h6>Fufu & Egusi Soup</h6>
+                   <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                   <p class="price">&#8358;19.99</p>
+                  
+                   </div>
+          
+                  <div class="foodlt food" id="foodset10">
+                  <h6>Amala & Ewedu Soup</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                      <p class="price">&#8358;19.99</p>
+                      
+                      </div>
+             
+                  <div class="foodrt1 food" id="foodset11">
+                           <h6>Poundo & Edikankong</h6>
+                           <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                              <p class="price">&#8358;19.99</p>
+                             
+                       </div>
+          
+                          <div class="foodlt1 food" id="foodset12">
+                          <h6>Semo & Bitterleaf Soup</h6>
+                              <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                              <p class="price">&#8358;19.99</p>
+                              
+                              </div>    
+                            </div>
+           
+              <div class="cuisine4">
+                 <h2>Desserts</h2>
+                 <div class="foodrt food" id="foodset13">
+                     <h6>Fufu & Egusi Soup</h6>
+                   <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                   <p class="price">&#8358;19.99</p>
+                   
+                   </div>
+          
+                  <div class="foodlt food" id="foodset14">
+                  <h6>Amala & Ewedu Soup</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                      <p class="price">&#8358;19.99</p>
+                      
+                      </div>
+             
+                  <div class="foodrt1 food" id="foodset15">
+                           <h6>Poundo & Edikankong</h6>
+                           <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                              <p class="price">&#8358;19.99</p>
+                              
+                       </div>
+          
+                          <div class="foodlt1 food" id="foodset16">
+                          <h6>Semo & Bitterleaf Soup</h6>
+                              <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                              <p class="price">&#8358;19.99</p>
+                             
+                              </div>    
+                            </div>
+              </div>
+      </div>
+      <div id="setModal" class="set-modal">
+          <div class="modal-content3">
+              <div class="modal-header">
+                  <span class="closer1 closer">&times;</span>
+                  <h2>TODAY'S MENU</h2>
+                  </div>
+              <div class="row1">
+               
+              <div class="cuisine5">
+                 <h2>Local Cuisine</h2>
+                 <div class="foodrt foodie" id="food1">
+                    <h6>Fufu & Egusi Soup</h6>
+                  <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                  <p class="price">&#8358;19.99</p>
+                  
+                  </div>
+           
+                 <div class="foodlt foodie" id="food2">
+                 <h6>Amala & Ewedu Soup</h6>
+                     <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                     <p class="price">&#8358;19.99</p>
+                    </div>
+                     </div>
+            
+              <div class="cuisine6">
+                 <h2>Continental Dishes</h2>
+                 <div class="foodrt foodie" id="food3">
+                     <h6>Fufu & Egusi Soup</h6>
+                   <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                   <p class="price">&#8358;19.99</p>
+                   
+                   </div>
+           
+                  <div class="foodlt foodie" id="food4">
+                  <h6>Amala & Ewedu Soup</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                      <p class="price">&#8358;19.99</p>
+                     
+                      </div>
+              
+                            </div>
+              
+              <div class="cuisine7">
+                     <h2>Snacks</h2>
+                     <div class="foodrt foodie" id="food5">
+                         <h6>Fufu & Egusi Soup</h6>
+                       <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                       <p class="price">&#8358;19.99</p>
+                      
+                       </div>
+              
+                      <div class="foodlt foodie" id="food6">
+                      <h6>Amala & Ewedu Soup</h6>
+                          <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                          <p class="price">&#8358;19.99</p>
+                          
+                          </div>
+                 
+                                </div>
+               
+                  <div class="cuisine8">
+                     <h2>Desserts</h2>
+                     <div class="foodrt foodie" id="food7">
+                         <h6>Fufu & Egusi Soup</h6>
+                       <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                       <p class="price">&#8358;19.99</p>
+                       
+                       </div>
+              
+                      <div class="foodlt foodie" id="food8">
+                      <h6>Amala & Ewedu Soup</h6>
+                          <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                          <p class="price">&#8358;19.99</p>
+                          
+                          </div>
+            
+                                </div>
+                  
+          </div>
+        </div>
+      </div>
+      <div id="setModal1" class="modal">
+          <div class="modal-content">
+           <div class="modal-header">
+           <span class="closer2 closer">&times;</span>
+           <h2>Remove Meal from Today's Menu</h2>
+           </div>
+           <div class="modal-body">
+               <div class="button2"  id="okay"><a href="#" class="button3" id="cancel1">
+                   CANCEL <i class="fas fa-ban"></i>
+                   </a>
+              </div>
+                <div class="button4"><a href="#" class="button5" id="remove">
+                       REMOVE <i class="fas fa-eraser"></i>
+                       </a>
+            </div>
+           </div>
+         </div>
+     </div>
+     <div id="setModal2" class="modal">
+        <div class="modal-content1">
+         <div class="modal-header">
+         <span class="closer3 closer">&times;</span>
+         <h2>Meal Removed From Today's Menu</h2>
+        </div>
+   </div>    
+       </div> 
+       <div id="setModal3" class="set-modal">
+          <div class="modal-content3">
+              <div class="modal-header">
+                  <span class="closer4 closer">&times;</span>
+                  <h2>YESTERDAY'S MENU</h2>
+                  </div>
+              <div class="row1">
+               
+              <div class="cuisine5">
+                 <h2>Local Cuisine</h2>
+                 <div class="foodrt foods" id="food1">
+                    <h6>Fufu & Egusi Soup</h6>
+                  <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                  <p class="price">&#8358;19.99</p>
+                  
+                  </div>
+           
+                 <div class="foodlt foods" id="food2">
+                 <h6>Amala & Ewedu Soup</h6>
+                     <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                     <p class="price">&#8358;19.99</p>
+                    </div>
+                     </div>
+            
+              <div class="cuisine6">
+                 <h2>Continental Dishes</h2>
+                 <div class="foodrt foods" id="food3">
+                     <h6>Fufu & Egusi Soup</h6>
+                   <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                   <p class="price">&#8358;19.99</p>
+                   
+                   </div>
+           
+                  <div class="foodlt foods" id="food4">
+                  <h6>Amala & Ewedu Soup</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                      <p class="price">&#8358;19.99</p>
+                     
+                      </div>
+              
+                            </div>
+              
+              <div class="cuisine7">
+                     <h2>Snacks</h2>
+                     <div class="foodrt foods" id="food5">
+                         <h6>Fufu & Egusi Soup</h6>
+                       <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                       <p class="price">&#8358;19.99</p>
+                      
+                       </div>
+              
+                      <div class="foodlt foods" id="food6">
+                      <h6>Amala & Ewedu Soup</h6>
+                          <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                          <p class="price">&#8358;19.99</p>
+                          
+                          </div>
+                 
+                                </div>
+               
+                  <div class="cuisine8">
+                     <h2>Desserts</h2>
+                     <div class="foodrt foods" id="food7">
+                         <h6>Fufu & Egusi Soup</h6>
+                       <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                       <p class="price">&#8358;19.99</p>
+                       
+                       </div>
+              
+                      <div class="foodlt foods" id="food8">
+                      <h6>Amala & Ewedu Soup</h6>
+                          <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                          <p class="price">&#8358;19.99</p>
+                          
+                          </div>
+            
+                                </div>
+                  
+          </div>
+          <button class="addbtn addbtn1" id="todMenu1">SET AS TODAY'S MENU <i class="far fa-check-square"></i></button>
+        </div>
+      </div>
+      <div id="setModal4" class="modal">
+          <div class="modal-content1">
+           <div class="modal-header">
+           <span class="closer5 closer">&times;</span>
+           <h2>Yesterday's Menu set as Today's Menu</h2>
+          </div>
+     </div>    
+         </div> 
+         <div id="setModal5" class="modal">
+            <div class="modal-content">
+             <div class="modal-header">
+             <span class="closer6 closer">&times;</span>
+             <h2>Add Meal to Today's Menu</h2>
+             </div>
+             <div class="modal-body">
+                 <div class="button2"  id="okay"><a href="#" class="button3" id="add">
+                     ADD <i class="far fa-check-square"></i>
+                     </a>
+                </div>
+                  <div class="button4"><a href="#" class="button5" id="cancel">
+                         CANCEL <i class="fas fa-ban"></i>
+                         </a>
+              </div>
+             </div>
+           </div>
+       </div>
+       <div id="setModal6" class="modal">
+          <div class="modal-content1">
+           <div class="modal-header">
+           <span class="closer7 closer">&times;</span>
+           <h2>Meal Added to Today's Menu</h2>
+          </div>
+     </div>    
+         </div>
+  <!-- <footer>
+    <p class="credits">Book-A-Meal | Copyright &copy; 2019</p>
+  </footer>    -->
+  <script src="./assets/js/admin.js"></script>
+  <script src="./assets/js/index.js"></script>
+
+    </body>
+  </html>

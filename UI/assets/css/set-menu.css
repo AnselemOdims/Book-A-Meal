@@ -1,0 +1,191 @@
+@import url(./img.css);
+@import url(./admin.css);
+/* /* @import url(./index.css); */
+
+
+.date {
+    margin-top: 70px;
+    margin-left: 200px;
+    display:inline-block;
+}
+.date h1 {
+    font-size: 22px;
+    color: #3c4859
+}
+.cuisine1, .cuisine2, .cuisine3, .cuisine4 {
+    height: 470px
+}
+.foodrt1, .foodlt1 {
+    margin-top: 10px;
+    height: 200px;
+}
+.foodrt, .foodlt {
+    height: 200px;
+}
+.main h2 {
+    font-size: 19px
+}
+.setbttn {
+    display:flex;
+    margin-left: 200px;
+    justify-content: space-around;
+  
+}
+.bttn {
+    /* flex: 1; */
+    box-sizing: content-box;
+    flex-basis: 100%;
+  
+}
+.addbtn {
+    width: 60%
+}
+
+.cuisine5, .cuisine7 {
+    border: solid 0px rgba(169, 169, 169, 0.39);
+    background: #f1f1f1;
+    width: 48%;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.26);
+    height: 270px
+}
+.cuisine6, .cuisine8 {
+  border: solid 0px rgba(169, 169, 169, 0.39);
+  background: #f1f1f1;
+  width: 48%;
+  border-radius: 3px;
+  display: block;
+  float: right;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.26);
+  height: 270px
+}
+
+.row1 {
+    border: solid 1px black;
+     height: 550px;
+     padding: 10px;
+}
+.row1 h2 {
+    font-size: 19px;
+    color: #3c4859;
+    
+}
+.set-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content3 {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    border: 0px solid #888;
+    width: 70%;
+    border-radius: 5px;
+    overflow: auto;
+    position: relative;
+    top: 10px;
+    margin-bottom: 100px
+  }
+  .sdmen1 {
+    margin:0px 0 0;
+  }
+  @media screen and (max-width: 420px){
+    .date{
+       margin-left: 10px;
+    }
+    .date h1 {
+        font-size: 18px
+    }
+    .setbttn {
+        margin-left: 10px
+    }
+    .addbtn{
+        width: 90%;
+        font-size: 11px
+    }
+    .foodlt {
+        width: 84%;
+        height: 100px;
+        margin-right: 10px;
+        margin-top: 22px
+    }
+    .foodrt{
+        width: 84%;
+        height: 100px;
+        margin-left: 10px
+    }
+    .foodlt1 {
+      width: 84%;
+      height: 100px;
+      margin-right: 10px;
+      margin-top: 55px
+    }
+    .foodrt1 {
+      width: 84%;
+      height: 100px;
+      margin-left: 10px;
+      margin-top: 22px
+    }
+    .foodrt h6 {
+        font-size: 12px
+    }
+    .foodlt h6 {
+        font-size: 12px
+    }
+    .cuisine1 h2, cuisine2 h2, .cuisine3 h2, .cuisine4 h2 {
+        font-size: 13px;
+        font-weight: bolder;
+        margin: 0 0 5px 20px
+    }
+    .cuisine1, .cuisine2, .cuisine3, .cuisine4 {
+        height: 640px
+    }
+   
+  }
+  @media screen and (max-width: 768px){
+    .addbtn{
+        width: 90%;
+        font-size: 15px
+    }
+    .cuisine1, .cuisine2, .cuisine3, .cuisine4 {
+        height: 800px
+    }
+    .foodlt {
+        width: 84%;
+        height: 160px;
+        margin-right: 20px;
+        margin-top: 22px
+    }
+    .foodrt{
+        width: 84%;
+        height: 160px;
+        margin-left: 20px
+    }
+    .foodlt1 {
+      width: 84%;
+      height: 160px;
+      margin-right: 20px;
+      margin-top: 30px
+    }
+    .foodrt1 {
+      width: 84%;
+      height: 160px;
+      margin-left: 20px;
+      margin-top: 22px
+    }
+  }

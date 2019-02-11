@@ -70,7 +70,7 @@
      padding: 10px;
 }
 .row1 h2 {
-    font-size: 19px;
+    font-size: 11px;
     color: #3c4859;
     
 }
@@ -147,20 +147,22 @@
     .foodlt h6 {
         font-size: 12px
     }
-    .cuisine1 h2, cuisine2 h2, .cuisine3 h2, .cuisine4 h2 {
+    .cuisine5 h2, .cuisine6 h2, .cuisine7 h2, .cuisine8 h2 {
         font-size: 13px;
         font-weight: bolder;
         margin: 0 0 5px 20px
     }
-    .cuisine1, .cuisine2, .cuisine3, .cuisine4 {
-        height: 640px
+    .cuisine5, .cuisine6, .cuisine7, .cuisine8 {
+        height: 420px
     }
-   
+    .row1 {
+        height: 845px
+    }
   }
   @media screen and (max-width: 768px){
     .addbtn{
         width: 90%;
-        font-size: 15px
+        font-size: 14px
     }
     .cuisine1, .cuisine2, .cuisine3, .cuisine4 {
         height: 800px
@@ -187,5 +189,8 @@
       height: 160px;
       margin-left: 20px;
       margin-top: 22px
+    }
+    .fa-hamburger:before {
+        display: none;
     }
   }

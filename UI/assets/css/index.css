@@ -177,18 +177,6 @@ a {
     font-size: 1.5em;
 }
 
-/* .button {
-    background-color: #11dc27;
-    border-radius: 7px;
-    color: #FFFFFF;
-    width: 30%;
-    height: 35px;
-    margin: 0 0 200px;
-    padding: 12px 50px;
-    font-size: 1.3em;
-    -webkit-animation: pop-in .7s ease-out;
-    animation: pop-in .7s ease-out;
-} */
 .button{
 border-radius: 5px;
 width: 30%;
@@ -234,14 +222,6 @@ transition: transform .1s,
 .current::before {
 transform: scaleY(1);
 width: 100%;
-/* .home .landing .button:hover,
-.home .landing button.focus,
-.home .landing button.active {
-    transition: background-color 0.5s, border-color 0.5s;
-    background-color: #228B22;
-    border-color: white;
-    color: #FFFFFF;
-    box-shadow: 2px 1px 3px darkgray */
 }
 footer {
     display: flex;
@@ -365,4 +345,5 @@ footer {
 
     }
     .sidebar a {font-size: 18px;}
+   
   }

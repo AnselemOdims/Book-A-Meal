@@ -175,7 +175,9 @@ body{
     height: 60%;
     padding: 0 20px 20px;
     border: 0px solid #888;
+
     width: 80%;
+
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -185,6 +187,7 @@ body{
   .modal-content5 {
     background-color: #fefefe;
     margin: 0 auto;
+
     height: 73%;
     padding: 0 20px 20px;
     border: 0px solid #888;
@@ -195,9 +198,11 @@ body{
     top: 10px;
     margin-bottom: 100px
   }
+
   .modal-content5 h2{
       font-size: 18px
   }
+
 table {
     margin: 0 auto;
     width: 97%
@@ -257,6 +262,7 @@ table {
         display: block;
         margin-left: 10px
     }
+
     .fa-hamburger:before {
         display: block;
     }
@@ -270,4 +276,5 @@ table {
       .addbtn{
           height: 40px
       }
+
 }

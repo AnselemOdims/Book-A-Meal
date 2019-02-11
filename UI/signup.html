@@ -18,10 +18,15 @@
         <a class="nav-li" href="./index.html">Home</a>
         <a href="#" class=" active nav-li" id="sign">Sign Up</a>
         <a href="./login.html" class="nav-li" id="log">Login</a>
+        <button class="openbtn" onclick="openNav()">☰</button> 
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="./index.html" class="sidelink">Home</a>
+          <a href="./login.html" class="sidelink">Login</a>
+          <a href="#" class="sidelink">Contact</a>
+        </div>
     </div>
 </div>
-
-
     <div id="signUpForm">
         <div id="signUpBody">
                 <div id="signUpHeader">
@@ -29,7 +34,7 @@
                     <b>Sign Up</b>
                     </p>
                 </div>
-      <form action="" id="form">
+      <form action="./user-dashboard.html" id="form">
         <div id="signUpHeaderDesc">
           <p>
             <em>Please input the following details here to sign up to this page</em>
@@ -122,6 +127,6 @@
   <footer>
     <p class="credits">Book-A-Meal | Copyright &copy; 2019</p>
   </footer>
- 
+  <script src="assets/js/index.js"></script>
     </body>
   </html>

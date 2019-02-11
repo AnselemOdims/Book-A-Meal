@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/admin.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Book a Meal</title>
+</head>
+
+<body>
+<div class="header">
+        <a><i class="fas fa-hamburger"></i></a>
+        <a href="#default" class="logo"><i>Meal-Buka</i></a>
+    <div class="header-right">
+        <a href="#" class="active nav-li" id="sign"> Welcome, Chef Anselem</a>
+        <a href="#"><i class="fas fa-bullhorn"></i></a>
+        <a href="./login.html" class="nav-li" id="log">Logout</a>
+        
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <img src="./assets/img/logoo.jpg" class="adminpic">
+        <h2>MANAGE MEAL OPTIONS</h2>
+        <a href="#" class="sdmen1">Meal Options</a>
+        <a href="./admin-dashboard.html" class="sdmen">Profile</a>
+        <a href="./set-menu.html" class="sdmen">Set Menu</a>  
+      </div>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰</button> 
+</div>
+<div class="sidenav">
+    <img src="./assets/img/logoo.jpg" class="adminpic">
+    <h2>MANAGE MEAL OPTIONS</h2>
+    <a href="#" class="sdmen1">Meal Options</a>
+    <a href="./admin-dashboard.html" class="sdmen">Profile</a>
+    <a href="./set-menu.html" class="sdmen">Set Menu</a>
+    <!-- <a href="#contact">Contact</a> -->
+  </div>
+  <div class="main">
+        <h2>Available Meal Options <button class="addbtn addbtn1" id="addBtn">BEEF UP <i class="fas fa-drumstick-bite"></i></button></h2>
+    <div class="row">   
+     <div class="cuisine1">
+        <h2>Local Cuisine</h2>
+        <div class="foodrt food" >
+           <h6>Fufu & Egusi Soup</h6>
+         <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%;">
+         <p class="price">&#8358;19.99</p>
+         <p><button class="mod" id="myBtn">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn1">DELETE <i class="far fa-trash-alt"></i></button></p>
+         </div>
+
+        <div class="foodlt food" >
+        <h6>Amala & Ewedu Soup</h6>
+            <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+            <p class="price">&#8358;19.99</p>
+            <p><button class="mod" id="myBtn1">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn2">DELETE <i class="far fa-trash-alt"></i></button></p>
+            </div>
+   
+        <div class="foodrt1 food">
+                 <h6>Poundo & Edikankong</h6>
+                 <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                    <p class="price">&#8358;19.99</p>
+                    <p><button class="mod"  id="myBtn2">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn3">DELETE <i class="far fa-trash-alt"></i></button></p>
+             </div>
+
+                <div class="foodlt1 food">
+                <h6>Semo & Bitterleaf Soup</h6>
+                    <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                    <p class="price">&#8358;19.99</p>
+                    <p><button class="mod" id="myBtn3">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn4">DELETE <i class="far fa-trash-alt"></i></button></p>
+                    </div>    
+                  </div>
+       
+     <div class="cuisine2">
+        <h2>Continental Dishes</h2>
+        <div class="foodrt food">
+            <h6>Fufu & Egusi Soup</h6>
+          <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+          <p class="price">&#8358;19.99</p>
+          <p><button class="mod"  id="myBtn4">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn5">DELETE <i class="far fa-trash-alt"></i></button></p>
+          </div>
+ 
+         <div class="foodlt food">
+         <h6>Amala & Ewedu Soup</h6>
+             <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+             <p class="price">&#8358;19.99</p>
+             <p><button class="mod" id="myBtn5">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn6">DELETE <i class="far fa-trash-alt"></i></button></p>
+             </div>
+    
+         <div class="foodrt1 food">
+                  <h6>Poundo & Edikankong</h6>
+                  <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                     <p class="price">&#8358;19.99</p>
+                     <p><button class="mod" id="myBtn6">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn7">DELETE <i class="far fa-trash-alt"></i></button></p>
+              </div>
+ 
+                 <div class="foodlt1 food">
+                 <h6>Semo & Bitterleaf Soup</h6>
+                     <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                     <p class="price">&#8358;19.99</p>
+                     <p><button class="mod" id="myBtn7">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn8">DELETE <i class="far fa-trash-alt"></i></button></p>
+                     </div>    
+                   </div>
+     
+     <div class="cuisine3">
+            <h2>Snacks</h2>
+            <div class="foodrt food">
+                <h6>Fufu & Egusi Soup</h6>
+              <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+              <p class="price">&#8358;19.99</p>
+              <p><button class="mod" id="myBtn8">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn9">DELETE <i class="far fa-trash-alt"></i></button></p>
+              </div>
+     
+             <div class="foodlt food">
+             <h6>Amala & Ewedu Soup</h6>
+                 <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                 <p class="price">&#8358;19.99</p>
+                 <p><button class="mod" id="myBtn9">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn10">DELETE <i class="far fa-trash-alt"></i></button></p>
+                 </div>
+        
+             <div class="foodrt1 food">
+                      <h6>Poundo & Edikankong</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                         <p class="price">&#8358;19.99</p>
+                         <p><button class="mod" id="myBtn10">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn11">DELETE <i class="far fa-trash-alt"></i></button></p>
+                  </div>
+     
+                     <div class="foodlt1 food">
+                     <h6>Semo & Bitterleaf Soup</h6>
+                         <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                         <p class="price">&#8358;19.99</p>
+                         <p><button class="mod" id="myBtn11">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn12">DELETE <i class="far fa-trash-alt"></i></button></p>
+                         </div>    
+                       </div>
+      
+         <div class="cuisine4">
+            <h2>Desserts</h2>
+            <div class="foodrt food">
+                <h6>Fufu & Egusi Soup</h6>
+              <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+              <p class="price">&#8358;19.99</p>
+              <p><button class="mod" id="myBtn12">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn13">DELETE <i class="far fa-trash-alt"></i></button></p>
+              </div>
+     
+             <div class="foodlt food">
+             <h6>Amala & Ewedu Soup</h6>
+                 <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                 <p class="price">&#8358;19.99</p>
+                 <p><button class="mod" id="myBtn13">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn14">DELETE <i class="far fa-trash-alt"></i></button></p>
+                 </div>
+        
+             <div class="foodrt1 food">
+                      <h6>Poundo & Edikankong</h6>
+                      <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                         <p class="price">&#8358;19.99</p>
+                         <p><button class="mod" id="myBtn14">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn15">DELETE <i class="far fa-trash-alt"></i></button></p>
+                  </div>
+     
+                     <div class="foodlt1 food" >
+                     <h6>Semo & Bitterleaf Soup</h6>
+                         <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%">
+                         <p class="price">&#8358;19.99</p>
+                         <p><button class="mod" id="myBtn15">MODIFY <i class="fas fa-exchange-alt"></i></button><button class="del" id="mybtn16">DELETE <i class="far fa-trash-alt"></i></button></p>
+                         </div>    
+                       </div>
+         </div>
+        </div>
+    <div id="myModal3" class="modal3">
+
+        <!-- Modal content -->
+        <div class="modal-content3">
+                <div class="formGroup1">
+            <div class="modal-header">
+                <span class="close3 closer">&times;</span>
+                <h2>Add New Meal</h2>
+                </div>
+         <form>
+            
+                <p>Meal Title</p>
+            <input name="meal-title" class="meal-title" type="text" autocomplete="off" required/>
+         
+            <p>Meal Image</p>
+            <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+            <label for="file">Choose a file</label>
+            <p>Price</p>
+            <span>&#8358;</span><input type="number" name="points" step="1" class="num">
+            <p>Meal Details</p>
+            <textarea class="text"></textarea>
+            <button class="addbtn2 addbtn3" id="addBtn1">STOCK UP <i class="fas fa-cart-arrow-down"></i></button>
+         
+         </form>
+        </div>
+        </div>
+      
+      </div>
+    <div id="myModal5" class="modal3">
+            <!-- Modal content -->
+        <div class="modal-content3">
+        <div class="formGroup1">
+                <div class="modal-header">
+                    <span class="close5 closer">&times;</span>
+                    <h2>MODIFY MEAL</h2>
+                    </div>
+                <form>
+                
+                    <p>Change Meal Title</p>
+                <input name="meal-title" class="meal-title" type="text" autocomplete="off" required/>
+                
+                <p>Change Image</p>
+                <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="file"><i class="far fa-images"></i> New Image</label>
+                <p>Change Price</p>
+                <span>&#8358;</span><input type="number" name="points" step="1" class="num">
+                <p>Modify Meal Details</p>
+                <textarea class="text"></textarea>
+                <button class="addbtn2 addbtn3" id="modBtn">MODIFY <i class="fas fa-exchange-alt"></i></button>
+                
+                </form>
+            </div>
+          </div>
+      </div>
+      <div id="myModal1" class="modal">
+         <div class="modal-content">
+          <div class="modal-header">
+          <span class="close1 closer">&times;</span>
+          <h2>Are you sure you want to delete this meal?</h2>
+          </div>
+          <div class="modal-body">
+              <div class="button2"><a href="#" class="button3" id="cancel">
+                  CANCEL 
+                  </a>
+             </div>
+               <div class="button4"><a href="#" class="button5" id="delete">
+                      DELETE
+                      </a>
+           </div>
+          </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content1">
+         <div class="modal-header">
+         <span class="close2 closer">&times;</span>
+         <h2>Meal Succesfully Deleted</h2>
+        </div>
+   </div>    
+       </div> 
+       <div id="myModal4" class="modal">
+            <div class="modal-content1">
+             <div class="modal-header">
+             <span class="close4 closer">&times;</span>
+             <h2>Meal Succesfully Added</h2>
+            </div>
+       </div>    
+    </div> 
+    <div id="myModal6" class="modal">
+            <div class="modal-content1">
+             <div class="modal-header">
+             <span class="close6 closer">&times;</span>
+             <h2>Meal Succesfully Modified</h2>
+            </div>
+       </div>    
+    </div>   
+  <footer>
+    <p class="credits">Book-A-Meal | Copyright &copy; 2019</p>
+  </footer> 
+   <script src="./assets/js/admin-manage.js"></script>
+   <script src="./assets/js/index.js"></script>
+
+    </body>
+  </html>

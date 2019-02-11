@@ -1,0 +1,228 @@
+@import url(./index.css);
+@import url(./admin.css)
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif|Quicksand|Raleway|Roboto');
+
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), no-repeat center center;
+    margin: auto;
+    font-family: 'Raleway'
+  }
+ 
+  #signUpHeader {
+    color: #3c4859;
+    text-align: center;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 30px
+  }
+ 
+  #signUpHeaderDesc {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    color: #3c4859
+  }
+  input.formDetails{
+    font-family: 'Raleway';
+    font-size: 17px;
+    color: black;
+  }
+  #signUpForm {
+    margin: 0 auto;
+    padding: 10px 25px 25px;
+    width: 45%;
+    box-shadow: 6px 6px 3px darkgray;
+    text-align: center;
+    border: solid 1px #c1c1c1;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    /*     background-color: #ccc;; */
+    margin-top: 100px;
+    margin-bottom: 70px
+  }
+  .signUpForm {
+    margin: 0 auto;
+    padding: 10px 25px 25px;
+    width: 45%;
+    box-shadow: 6px 6px 3px darkgray;
+    text-align: center;
+    border: solid 1px #c1c1c1;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    /*     background-color: #ccc;; */
+    margin-top: 100px;
+    margin-bottom: 100px
+  }
+  
+  .labelId {
+    color: #3c4859;
+    text-align: left;
+    font-family: 'Raleway';
+    /*text-shadow: 1px 1px 1px black;*/
+    font-size: 18px;
+    width: 84%;
+    padding: 0px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .formGroup label:after {
+    content: "*";
+    display: inline;
+    font-size: 10px;
+    color: red;
+  }
+  .formDetails:focus{
+    outline:none
+  }
+  .formDetails {
+    width: 80%;
+    height: 25px;
+    border: 1.5px solid rgba(0, 255, 0, 0.911);
+    border-radius: 4px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    /* margin-bottom: 20px; */
+    background-color: #f7f7f7;
+    
+  }
+  .formDetails:focus{
+    outline: solid 0.5px #228B22;
+  }
+ 
+  .pwhide {
+    /* margin: 0 auto; */
+    float: left;
+    margin-left: 27px
+  }
+  span {
+    float: left;
+    padding-left: 5px;
+    font-family: 'Raleway';
+  }
+ 
+  .regButton{
+    border-radius: 4px;
+    width: 84%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* margin: 30px 0 20px; */
+    text-align: center;
+    height: 50px;
+    padding: 5px 10px 0 0;
+    font-size: 0.5em;
+    color: #FFFFFF;
+    background-color: rgba(0, 255, 0, 0.911);
+    border: solid 0px;
+    font-family: Raleway
+     }
+    .regButton1 {
+        padding: 5px 2px 5px 2px;
+        font-size: 19px;
+        text-decoration: none;
+        display: block;
+        color: #FFFFFF;
+        position: relative; 
+        z-index: 10;
+        /* font-weight: bold; */
+      }
+    
+    .regButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #228B22;
+    border-radius: 5px;
+    
+    transform: scaleY(0);
+    transition: transform .1s,
+                width .4s cubic-bezier(1,0,0,1) .1s,
+                background-color .6s;}
+    .regButton:hover::before,
+    .current::before {
+    transform: scaleY(1);
+    width: 100%;
+    }
+    .regButton:hover {
+      background-color: #11dc27;
+    }
+  .regButton:focus {
+    outline: none;
+  }
+  /*  */
+  .form_main{
+   -webkit-animation: pop-in .7s ease-out;
+    animation: pop-in .7s ease-out;
+    margin: 0 auto;
+  }
+ 
+  #loginLink h4 {
+    font-family: 'Raleway';
+  }
+  #loginLink a {
+    text-decoration: none;
+    color: #a9a9a9;
+  }
+  #loginLink a:hover {
+    text-decoration: none;
+    color: dimgray;
+  }
+  #myModal {
+    display: none
+  }
+
+  @media screen and (max-width: 600px){
+   .formDetails{
+     width: 72%;
+     height: 14px;
+     font-size: 15px
+   }
+   input.formDetails{
+     font-size: 13px
+   }
+   .labelId, .regButton1{
+     font-size: 15px
+   }
+   .regButton {
+     height: 33px
+   }
+   
+   .main-nav {
+     display: none;
+     width: 200px
+   }
+   #signUpForm {
+     /* display: inline; */
+     margin-bottom: 0px;
+   }
+   #signUpHeader, #signUpHeader p{
+     font-size: 20px;
+     margin-bottom: 15px
+   }
+   footer {
+     margin-top: 50px
+   }
+   #signUpHeaderDesc {
+     font-size: 12px
+   }
+   h4 {
+     font-size: 14px
+   }
+   #log {
+    background-color: #11dc27;
+    color: white;
+}
+
+  }
+  

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/user-dashboard.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+
+  <title>Book a Meal</title>
+</head>
+
+<body>
+<div class="header">
+        <a ><i class="fas fa-hamburger"></i></a>
+        <a href="#default" class="logo"><i>Meal-Buka</i></a>
+    <div class="header-right">
+        <a class="nav-li" href="#"><i class="far fa-envelope"></i></a>
+      
+        <a href="./login.html" class="active nav-li" id="log">Logout</a>
+    </div>
+</div>
+<div class="fullContent">
+ 
+            <div class="box" id="boxer">
+       <a href="javascript:void(0)" class="closebtn" onclick="close()">×</a>
+                <div class="main-card">
+                    <div class="image">
+                        <img src="http://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile Photo">
+                    </div>
+    
+                    <p class= "name">John Doe</p>
+                    <span class="bio">Username</span><span class=details>johndoe77</span>
+                    <span class="bio">Email</span><span class=details>johndoe@gmail.com</span>
+                    <span class="bio">Phone</span><span class=details>08137298342</span>
+
+                    <div class="btn">
+                        <p><a href= "editprofile.html">Edit Profile</a></p>
+                    </div>
+                    <div class="btn">
+                        <p><a href="./signup.html">Delete Account</a></p>
+                    </div>
+                </div>
+    
+                <div class="side"><a href="user-dashboard.html" class="small">DASHBOARD</a>
+                </div>
+            </div>
+            <div class="top">
+            <div class="date">
+                    <h1>Saturday, 7th Feb. 2019</h1>
+                    </div>
+                    <div class="setbttn">
+                    <div class="bttn">
+                    <button class="addbtn addbtn1" id="todMenu">TODAY'S MENU <i class="fas fa-shopping-bag"></i></button>
+                    </div>      
+                    <div class="bttn">
+                    <button class="addbtn addbtn1" id="yestMenu">MEAL TRAY <i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    </div>
+                </div>
+            <div class="order-details">
+                <div class="hist">
+                    <h2>ORDER HISTORY</h2>
+                </div>
+                    <div class="table-wrapper">
+                        
+                      <table>
+                        <thead>
+                          <tr><th>Menu Id</th>
+                          <th>Meal Title</th>
+                          <th>Amount(&#8358;)</th>
+                          <th>Order Date & Time</th>
+                          <th>Delivery Status</th>
+                        </tr></thead>
+                        <tbody><tr>
+                          <td>1005</td>
+                          <td>Fufu and Egusi Soup</td>
+                          <td>2100</td>
+                          <td>22/01/19 9:45pm</td>
+                          <td>Delivered</td>
+                        </tr>
+                        <tr>
+                          <td>1034</td>
+                          <td>Jollof Rice & Chicken</td>
+                          <td>2700</td>
+                          <td>23/01/19 3:22pm</td>
+                          <td>Delivered</td>
+                        </tr>
+                        <tr>
+                          <td>1165</td>
+                          <td>Poundo and Afang Soup</td>
+                          <td>2300</td>
+                          <td>23/01/19 5:43pm</td>
+                          <td>En-Route</td>
+                        </tr>
+                        <tr>
+                          <td>1344</td>
+                          <td>Goat-Meat Pepper-Soup</td>
+                          <td>1700</td>
+                          <td>23/01/19 6:52pm</td>
+                          <td>En-Route</td>
+                        </tr>
+                        <tr>
+                          <td>1846</td>
+                          <td>Large Beef Steak</td>
+                          <td>4500</td>
+                          <td>24/01/19 2:50pm</td>
+                          <td>Delivered</td>
+                        </tr>
+                        <tr>
+                          <td>1093</td>
+                          <td>Shawarma</td>
+                          <td>1500</td>
+                          <td>24/01/19 2:52pm</td>
+                          <td>Cancelled</td>
+                        </tr>
+                        <tr>
+                          <td>1425</td>
+                          <td>Poundo and White Soup</td>
+                          <td>2500</td>
+                          <td>24/01/19 4:30pm</td>
+                          <td>En-Route</td>
+                        </tr>
+                        <tr>
+                          <td>1928</td>
+                          <td>Nkwobi</td>
+                          <td>2600</td>
+                          <td>24/01/19 7:27pm</td>
+                          <td>Delivered</td>
+                        </tr>
+                        <tr>
+                          <td>1019</td>
+                          <td>Italian Pasta</td>
+                          <td>3500</td>
+                          <td>25/01/19 8:40am</td>
+                          <td>Delivered</td>
+                        </tr>
+                        <tr>
+                          <td>1527</td>
+                          <td>Fried Rice and Turkey</td>
+                          <td>2700</td>
+                          <td>25/01/19 10:50am</td>
+                          <td>En-Route</td>
+                          </tr>
+                        <tr>
+                          <td>1028</td>
+                          <td>Crispy Calamari Rings</td>
+                          <td>2000</td>
+                          <td>25/01/19 12:05pm</td>
+                          <td>Cancelled</td>
+                        </tr>
+                        <tr>
+                          <td>1927</td>
+                          <td>Eba & Ogbono Soup</td>
+                          <td>2500</td>
+                          <td>25/01/19 2:01pm</td>
+                          <td>Delivered</td>
+                        </tr>
+                        
+                      </tbody></table>
+                    </div>
+                  </div>
+     </div>
+     <div id="setModal" class="set-modal">
+            <div class="modal-content3">
+                <div class="modal-header">
+                    <span class="closer1 closer">&times;</span>
+                    <h2>TODAY'S MENU</h2>
+                    </div>
+                <div class="row1">
+                 
+                <div class="cuisine5">
+                   <h2>Local Cuisine</h2>
+                   <div class="foodrt foodie" id="food1">
+                      <h6>Fufu & Egusi Soup</h6>
+                    <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                    <p class="price">&#8358;19.99</p>
+                    
+                    </div>
+             
+                   <div class="foodlt foodie" id="food2">
+                   <h6>Amala & Ewedu Soup</h6>
+                       <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                       <p class="price">&#8358;19.99</p>
+                      </div>
+                       </div>
+              
+                <div class="cuisine6">
+                   <h2>Continental Dishes</h2>
+                   <div class="foodrt foodie" id="food3">
+                       <h6>Fufu & Egusi Soup</h6>
+                     <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                     <p class="price">&#8358;19.99</p>
+                     
+                     </div>
+             
+                    <div class="foodlt foodie" id="food4">
+                    <h6>Amala & Ewedu Soup</h6>
+                        <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                        <p class="price">&#8358;19.99</p>
+                       
+                        </div>
+                
+                              </div>
+                
+                <div class="cuisine7">
+                       <h2>Snacks</h2>
+                       <div class="foodrt foodie" id="food5">
+                           <h6>Fufu & Egusi Soup</h6>
+                         <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                         <p class="price">&#8358;19.99</p>
+                        
+                         </div>
+                
+                        <div class="foodlt foodie" id="food6">
+                        <h6>Amala & Ewedu Soup</h6>
+                            <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                            <p class="price">&#8358;19.99</p>
+                            
+                            </div>
+                   
+                                  </div>
+                 
+                    <div class="cuisine8">
+                       <h2>Desserts</h2>
+                       <div class="foodrt foodie" id="food7">
+                           <h6>Fufu & Egusi Soup</h6>
+                         <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                         <p class="price">&#8358;19.99</p>
+                         
+                         </div>
+                
+                        <div class="foodlt foodie" id="food8">
+                        <h6>Amala & Ewedu Soup</h6>
+                            <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:75%">
+                            <p class="price">&#8358;19.99</p>
+                            
+                            </div>
+              
+                                  </div>
+                    
+            </div>
+          </div>
+        </div>
+        <div id="setModal1" class="modal">
+                <div class="modal-content">
+                 <div class="modal-header">
+                 <span class="closer2 closer">&times;</span>
+                 <h2>Add Meal To Order Tray</h2>
+                 </div>
+                 <div class="modal-body">
+                     <div class="button2"  id="okay"><a href="#" class="button3" id="remove">
+                         ADD <i class="fas fa-ban"></i>
+                         </a>
+                    </div>
+                      <div class="button4"><a href="#" class="button5" id="cancel1">
+                             CANCEL <i class="fas fa-eraser"></i>
+                             </a>
+                  </div>
+                 </div>
+               </div>
+           </div>
+           <div id="setModal2" class="modal">
+                <div class="modal-content1">
+                 <div class="modal-header">
+                 <span class="closer3 closer">&times;</span>
+                 <h2>Meal Added To Order Tray</h2>
+                </div>
+           </div>    
+               </div> 
+               <div id="setModal3" class="set-modal">
+                    <div class="modal-content4">
+                        <div class="modal-header">
+                            <span class="closer4 closer">&times;</span>
+                            <h2>MEAL ORDER TRAY</h2>
+                            </div>
+                        <div class="row1">
+                         
+                        <div class="cuisine5">
+                           <div class="foodrt foods" id="food1">
+                              <h6>Fufu & Egusi Soup</h6>
+                            <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:85%">
+                            <p class="price">&#8358;19.99</p>
+                            
+                            </div>
+                      </div>
+    
+                        <div class="cuisine7">
+                                <div class="foodrt foods" id="food2">
+                                   <h6>Fufu & Egusi Soup</h6>
+                                 <img src="./assets/img/egusi.jpg" alt="Fufu & Egusi Soup" style="width:100%; height:85%">
+                                 <p class="price">&#8358;19.99</p>
+                                
+                                 </div>
+                         </div>
+                        
+                  <button class="addbtn addbtn1 mod" id="yestMenu">ORDER<i class="fas fa-shopping-basket"></i></button>
+                            
+                  </div>
+                  </div>
+                </div>
+                <div id="changeModal" class="modal">
+                        <div class="modal-content">
+                         <div class="modal-header">
+                         <span class="close7 closer">&times;</span>
+                         <h2>Change Meal </h2>
+                         </div>
+                         <div class="modal-body">
+                             <div class="button2"  id="okay"><a href="#" class="button3" id="remove2">
+                                 CHANGE <i class="fas fa-exchange-alt"></i>
+                                 </a>
+                            </div>
+                              <div class="button4"><a href="#" class="button5" id="cancel5">
+                                     CANCEL <i class="fas fa-ban"></i>
+                                     </a>
+                          </div>
+                         </div>
+                       </div>
+                   </div>
+                   <div id="myModal5" class="modal3">
+                         <div class="modal-content5">
+                    <div class="formGroup1">
+                            <div class="modal-header">
+                                <span class="close5 closer">&times;</span>
+                                <h2>CUSTOMER/ORDER INFO</h2>
+                                </div>
+                            <form>
+                            
+                                <p>Order Address</p>
+                            <input name="meal-title" class="meal-title" type="text" autocomplete="off" required/>
+                            
+                            <p>Phone Number</p>
+                            <input type="text" name="points" class="num">
+                            <p>Other Details</p>
+                            <textarea class="text"></textarea>
+                            <button class="addbtn2 addbtn3" id="modBtn">PLACE ORDER <i class="fas fa-exchange-alt"></i></button>
+                            
+                            </form>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="myModal6" class="modal">
+                        <div class="modal-content1">
+                         <div class="modal-header">
+                         <span class="close6 closer">&times;</span>
+                         <h2>Order Succesfully Booked</h2>
+                        </div>
+                   </div>    
+                </div> 
+  <!-- <footer>
+    <p class="credits">Book-A-Meal | Copyright &copy; 2019</p>
+  </footer>    -->
+  <script src="./assets/js/admin.js"></script>
+  <script src="./assets/js/admin-manage.js"></script>
+    </body>
+  </html>

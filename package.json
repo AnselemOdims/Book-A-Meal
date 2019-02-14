@@ -1,0 +1,45 @@
+{
+  "name": "book-a-meal",
+  "version": "1.0.0",
+  "description": "Book-A-Meal is an application that allows customers to make food orders and helps the food vendor know what the customers want to eat.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnselemOdims/Book-A-Meal.git"
+  },
+  "keywords": [
+    "book",
+    "meal",
+    "food",
+    "cuisine",
+    "order",
+    "Andela",
+    "ALC",
+    "forloop",
+    "Africa"
+  ],
+  "author": "Anselem Odimegwu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnselemOdims/Book-A-Meal/issues"
+  },
+  "homepage": "https://github.com/AnselemOdims/Book-A-Meal#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10"
+  }
+}
